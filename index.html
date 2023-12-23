@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Gcash inpired by Marc</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="H1">Ecash Tracker</h1>
+      <h3>Your balance</h3>
+      <div class="panelCash">
+        <h1 class="H2" id="BudgetDisplay">₱ 0.00</h1>
+        <button onclick="AddBudget()">+ Add</button>
+      </div>
+
+      <form id="ExpenseForm">
+        <label for="InputBudget">Enter Budget: </label><br />
+        <input type="number" id="InputBudget" /><br />
+        <label for="InputExpenses">Enter Expenses: </label><br />
+        <input type="number" id="InputExpenses" /><br />
+        <label for="ExpensesDescription">Add Description:</label><br />
+        <textarea id="ExpensesDescription" contenteditable="false"></textarea
+        ><br />
+
+        <!-- Use type="submit" for the Enter button -->
+        <button type="submit" class="button">Enter</button>
+      </form>
+
+      <h1 id="History">History</h1>
+      <div id="ExpensesContainer"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
